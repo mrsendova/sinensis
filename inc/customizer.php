@@ -32,6 +32,12 @@ function sinensis_add_section( $wp_customize ){
     'transport' => 'refresh',
 	) );
 
+	$wp_customize->add_setting( 'sinensis_header_show_description' , array(
+		'default' => 'true',
+		'type' => 'theme_mod',
+		'transport' => 'refresh',
+	) );
+
 	$wp_customize->add_section( 'sinensis_sinensis_options' , array(
     'title'      => __( 'Sinensis Options', 'sinensis' ),
     'priority'   => 10,
@@ -42,15 +48,10 @@ function sinensis_add_section( $wp_customize ){
         $wp_customize,
         'sinensis_header_capitalization',
         array(
-            'label'          => __( 'Capitalize site title', 'sinensis' ),
-						'description'    => __( 'This will put the first letter of the website\'s name bigger.', 'sinensis'),
+            'label'          => __( 'Make the first character of the site\'s title bigger', 'sinensis' ),
             'section'        => 'sinensis_sinensis_options',
             'settings'       => 'sinensis_header_capitalization',
-            'type'           => 'radio',
-            'choices'        => array(
-                'true'   => __( 'Yes' ),
-                'false'  => __( 'No' )
-            )
+            'type'           => 'checkbox',
         )
     )
 	);
@@ -60,10 +61,9 @@ function sinensis_add_section( $wp_customize ){
 				$wp_customize,
 				'sinensis_header_show_description',
 				array(
-						'label'          => __( 'Setting 2', 'sinensis' ),
-						'description'    => __( 'Lorem ipsum dolor sit amet', 'sinensis'),
+						'label'          => __( 'Display website\'s description in the header', 'sinensis' ),
 						'section'        => 'sinensis_sinensis_options',
-						'settings'       => 'sinensis_show_description',
+						'settings'       => 'sinensis_header_show_description',
 						'type'           => 'checkbox'
 				)
 		)

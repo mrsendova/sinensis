@@ -35,7 +35,7 @@
 				?></h1>
 			<?php
 			$description = get_bloginfo( 'description', 'display' );
-			if ( $description || is_customize_preview() ) : ?>
+			if ( get_theme_mod( 'sinensis_header_show_description', false) AND $description || is_customize_preview() ) : ?>
 				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
 			<?php
 			endif; ?>
