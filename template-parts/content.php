@@ -20,7 +20,7 @@
 
 		if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
-			<?php sinensis_posted_on(); ?>
+			<?php sinensis_new_posted_on(); ?>
 		</div><!-- .entry-meta -->
 		<?php
 		endif; ?>

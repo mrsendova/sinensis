@@ -14,7 +14,9 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
+		<hr>
+		<p id="copyright-footer"><?php echo get_theme_mod('sinensis_footer_text'); ?></p>
+<!--		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'sinensis' ) ); ?>"><?php
 				/* translators: %s: CMS name, i.e. WordPress. */
 				printf( esc_html__( 'Proudly powered by %s', 'sinensis' ), 'WordPress' );
@@ -24,11 +26,11 @@
 				/* translators: 1: Theme name, 2: Theme author. */
 				printf( esc_html__( 'Theme: %1$s by %2$s.', 'sinensis' ), 'sinensis', '<a href="https://automattic.com/">Raphaël Marquis-Pelletier</a>' );
 			?>
-		</div><!-- .site-info -->
+		</div> -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-
+</div> <!-- div:page -->
 </body>
 </html>

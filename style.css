@@ -380,6 +380,16 @@ bigger {
   font-weight: normal;
   margin: 0px;
 }
+
+.site-description {
+  text-align: center;
+  color: "#212121";
+}
+
+#copyright-footer {
+  text-align: center;
+  color: #2d2d2d;
+}
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
@@ -397,6 +407,11 @@ body {
 	background: #fff; /* Fallback for when there is no custom background color defined. */
 }
 
+.page {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
 blockquote:before,
 blockquote:after,
 q:before,
@@ -409,12 +424,13 @@ q {
 	quotes: "" "";
 }
 
+/*
 hr {
 	background-color: #ccc;
 	border: 0;
 	height: 1px;
 	margin-bottom: 1.5em;
-}
+}*/
 
 ul,
 ol {
@@ -589,7 +605,8 @@ a:active {
 
 #site-navigation .menu .menu-item a {
   color: black;
-  text-transform: lowercase;;
+  text-transform: lowercase;
+  text-decoration: none;
   font-family: 'LinLibertine';
   font-size: 14pt;
   letter-spacing: 5px;
@@ -714,6 +731,10 @@ a:active {
   width: 100%;
 }
 
+.entry-title a{
+  text-decoration: none;
+  color: black;
+}
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
