@@ -24,7 +24,7 @@ function sinensis_new_posted_on() {
 		esc_html( get_the_modified_date() )
 	);
 
-	echo '<span class="posted-on">' . $time_string . ' - <span class="author">' . esc_html( get_the_author() ) . '</span></span>';
+	echo '<p class="article-header-text">' . $time_string . ' - <span class="article-header-author">' . esc_html( get_the_author() ) . '</span></p>';
 
 }
 endif;

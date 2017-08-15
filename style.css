@@ -57,9 +57,11 @@ html {
 	-ms-text-size-adjust:     100%;
 }
 
+/*
 header {
 	margin-bottom: 50px;
 }
+*/
 
 #separateur-header {
   color: #858585;
@@ -389,6 +391,14 @@ bigger {
 #copyright-footer {
   text-align: center;
   color: #2d2d2d;
+}
+
+.article-header-text {
+  color: #525252;
+}
+
+.article-header-author {
+  font-style: italic;
 }
 /*--------------------------------------------------------------
 # Elements
@@ -722,7 +732,7 @@ a:active {
 # Content
 --------------------------------------------------------------*/
 
-#content h3,span,p{
+#content h3,p{
   padding-left: 50px;
   padding-right: 50px;
 }
