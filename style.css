@@ -48,7 +48,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 --------------------------------------------------------------*/
 @font-face {
     font-family:"LinLibertine";
-    src: url("/wp-content/themes/sinensis/LinLibertine_DRah.ttf") /* TTF file for CSS3 browsers */
+    src: url('/wp-content/themes/sinensis/LinLibertine_DR.woff') format('woff'), url("/wp-content/themes/sinensis/LinLibertine_DRah.ttf");
 }
 
 html {
