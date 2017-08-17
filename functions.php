@@ -106,6 +106,7 @@ add_action( 'widgets_init', 'sinensis_widgets_init' );
  */
 function sinensis_scripts() {
 	wp_enqueue_style( 'sinensis-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'sinensis-responsive-style', get_stylesheet_directory_uri() . '/responsive.css');
 
 	wp_enqueue_script( 'sinensis-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 

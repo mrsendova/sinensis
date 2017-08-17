@@ -375,6 +375,9 @@ big {
   text-align: justify;
 }
 
+#content .comments-area p{
+  text-align: initial;
+}
 bigger {
   font-size: 150%;
 }
